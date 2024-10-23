@@ -1,0 +1,174 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{      
+    background: rgb(189, 159, 103);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    font-family: 'Baloo Bhai', cursive;
+}
+#text{
+   
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 3%;
+    color: white;
+    
+    
+}
+h5{
+    color: white;
+    font-size: 5px;
+}
+
+.container{
+    width: 80vmin;
+    background: rgb(55, 53, 53);
+    border: double white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-left: 50%;
+    border-radius: 15px;
+    margin-top: 25%;
+    padding-bottom: 2%;
+}
+#btn{
+    
+   
+    margin-left: 28%;
+    border-radius: 3px;
+   margin-top: 4%;
+   margin-bottom: 1%;
+   border: 2px black;
+   padding: 4% 5%;
+  
+   
+}
+
+img{
+    width: 20%;
+    height: 30%;
+    border-radius:50%;
+    margin-left: 38%;
+    margin-top: 5%;
+    border: dotted 2px bisque;
+}
+
+
+
+
+button{
+  font-size: larger;
+    margin-bottom: 3%;
+    display: flex;
+    margin-left: 3%;
+    padding: 4px 6px;
+    box-shadow: 1px 1px 1px white;
+    font-weight: 600;
+
+} */
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {      
+    background: rgb(189, 159, 103);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Baloo Bhai', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Maximum width for large screens */
+    background: rgb(55, 53, 53);
+    border: 2px double white;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    max-width: 150px; /* Restrict the image size */
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px dotted bisque;
+}
+
+#text {
+    margin: 20px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#btn button {
+    font-size: 0.8rem;
+    padding: 8px 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+              /* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    img {
+        width: 50%; /* Shrink image on smaller screens */
+        max-width: 120px;
+    }
+
+    #text {
+        font-size: 1.2rem;
+    }
+
+    #btn button {
+        font-size:small;
+        padding: 6px 8px;
+    }
+}
+
+                 /* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+    #text {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 40%;
+        max-width: 100px;
+    }
+
+    #btn button {
+        font-size: 0.4rem;
+        padding: 4px 6px;
+    }
+}
+
